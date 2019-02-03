@@ -11,9 +11,9 @@
         </a>
         <nav>
         <ul class="header-navigation-list">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="media.html">Фото и видео</a></li>
-            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -35,23 +35,23 @@
                     <legend>Поиск гостиницы в Седоне</legend>
                     <div>
                         <label for="arrival-date">Дата заезда:</label>
-                        <input type="date" id="arrival-date">
+                        <input type="date" id="arrival-date" name="arrival-date"> 
                     </div>
                     <div>
                         <label for="departure-date">Дата выезда:</label>
-                        <input type="date" id="departure-date">
+                        <input type="date" id="departure-date" name="departure-date">
                     </div>
                     <div class="half-width">
                         <label for="adults-amount">Взрослые:</label>
-                        <button class="change-value">-</button>
-                        <input type="number" value="0">
-                        <button class="change-value">+</button>
+                        <button class="change-value" type="submit">-</button>
+                        <input type="number" value="0" min="1" max="10" name="adults-amount" id="adults-amount">
+                        <button class="change-value" type="submit">+</button>
                         <label for="children-amount">Дети:</label>
-                        <button class="change-value">-</button>
-                        <input type="number" value="0">
-                        <button class="change-value">+</button>
+                        <button class="change-value" type="submit">-</button>
+                        <input type="number" value="0" min="1" max="10" name="children-amount" id="children-amount">
+                        <button class="change-value" type="submit">+</button>
                     </div>
-                    <button class="search">Найти</button>
+                    <button class="search" type="submit">Найти</button>
                 </fieldset>
             </form>
         </section>
