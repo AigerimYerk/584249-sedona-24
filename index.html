@@ -30,7 +30,7 @@
         <section class="for-travel">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <form>
+            <form action="https://echo.htmlacademy.ru" method="post">
                 <fieldset>
                     <legend>Поиск гостиницы в Седоне</legend>
                     <div>
@@ -43,13 +43,13 @@
                     </div>
                     <div class="half-width">
                         <label for="adults-amount">Взрослые:</label>
-                        <button class="change-value" type="submit">-</button>
-                        <input type="number" value="0" min="1" max="10" name="adults-amount" id="adults-amount">
-                        <button class="change-value" type="submit">+</button>
+                        <button class="change-value">-</button>
+                        <input type="number" value="1" min="1" max="10" name="adults-amount" id="adults-amount">
+                        <button class="change-value">+</button>
                         <label for="children-amount">Дети:</label>
-                        <button class="change-value" type="submit">-</button>
-                        <input type="number" value="0" min="1" max="10" name="children-amount" id="children-amount">
-                        <button class="change-value" type="submit">+</button>
+                        <button class="change-value">-</button>
+                        <input type="number" value="0" min="0" max="10" name="children-amount" id="children-amount">
+                        <button class="change-value">+</button>
                     </div>
                     <button class="search" type="submit">Найти</button>
                 </fieldset>
