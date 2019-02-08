@@ -13,10 +13,10 @@ body {
   text-decoration: none;
   color: #000000;
 }
-.link:hover{
+.link:hover {
   color: #81b3d2;
 }
-.link:active{
+.link:active {
   color: #000000;
   opacity: 0.3;
 }
@@ -130,31 +130,32 @@ fieldset legend:active, .hotel-booking:active {
 footer p {
   font-size: 21px;
 }
-.social-icon li{
+.social-icons li {
   list-style-type: none;
   background-color: #81b3d2;
   background-position: center;
   background-repeat: no-repeat;
   width: 46px;
   height: 48px;
+  font-size: 0;
+  line-height:0;
 }
-.social-icon .twitter {
+.social-icons .twitter {
   background-image: url("../img/twitter-icon.svg");
   background-size: 17px 15px;
 }
-.social-icon .facebook {
+.social-icons .facebook {
   background-image: url("../img/facebook-icon.svg");
   background-size: 12px 22px;
 }
-.social-icon .youtube {
+.social-icons .youtube {
   background-image: url("../img/youtube-icon.svg");
   background-size: 20px 16px;
 }
-.social-icon li:hover {
+.social-icons li:hover {
   background-color: #669ec0;
 }
-.social-icon li:active {
-  opacity: 0.3;
+.social-icons li:active {
   background-color: #5496bd;
 }
 .footer-logo p {
