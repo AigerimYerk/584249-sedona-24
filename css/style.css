@@ -32,7 +32,8 @@ li {
 .motto {
     background-image: url("../img/sedona.jpg");
     width: 1200px;
-    height:800px;
+    height: 800px;
+    margin-bottom: -208px;
 }
 section p {
     font-size: 14px;
@@ -40,11 +41,23 @@ section p {
 }
 section .welcome {
     background-image: url("../img/welcome.svg");
+    margin-top: 45px;
+    margin-left: 370px;
     width: 459px;
     height: 353px;
 }
+.motto .mask {
+    background-image: url("../img/polygon.svg");
+    width: 1203px;
+    height: 59px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
 .reasons h2 {
     font-size: 21px;
+    width: 440px;
+    text-align: center;
+    padding-top: 61px;
 }
 .for-travel h2 {
     font-size: 30px;
@@ -53,14 +66,30 @@ section .welcome {
 }
 form fieldset {
     border:none;
-     width: 568px;
-    height: 395px;
+    width: 568px;
+    height: 450px;
+}
+form {
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 fieldset legend, .hotel-booking {
     background-color: #766357;
     color: #ffffff;
     font-size: 21px;
+}
+form div {
+    margin: 30px;
+}
+form .full{
+    padding: 10px 150px 10px 13px;
+    margin-left: 15px;
+    display: inline-block;
+    background-image: url("../img/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: 275px;
+}
+fieldset legend {
+    padding: 35px 130px 33px 130px;
 }
 fieldset legend:hover, .hotel-booking:hover {
      background-color: #604e43;
@@ -76,6 +105,9 @@ fieldset legend:active, .hotel-booking:active {
     text-transform: uppercase;
     text-decoration: none;
 }
+div h3 {
+    font-size: 21px;
+}
 .more {
     background-color: #81b3d2;
     color: #ffffff;
@@ -83,6 +115,9 @@ fieldset legend:active, .hotel-booking:active {
     font-size: 14px;
     line-height: 21px;
     text-decoration: none;
+}
+.row .more {
+    font-size: 21px;
 }
 .catalog-item span {
     font-size: 14px;
@@ -125,7 +160,13 @@ fieldset legend:active, .hotel-booking:active {
     background-color: #81b3d2;
     color: #ffffff;
     font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
     border:none;
+    width: 458px;
+    height: 58px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 footer p {
     font-size: 21px;
@@ -168,4 +209,139 @@ footer p {
 .blue:active {
     background-color: #5496bd;
     color:rgba(255, 255, 255,0.3);
+}
+.row div {
+    min-width: 280px;
+    min-height: 225px;
+    text-align: center;
+    padding: 16px 30px 15px 30px;
+}
+.row:nth-of-type(1) div {
+    background-color: #81b3d2;
+}
+.row:last-of-type div {
+    background-color: #eeeeee;
+}
+/* ----- Сеточные стили ----- */
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#fefefe;
+}
+.page-header {
+    min-height: 56px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    order: 2;
+    position: absolute;
+    top: 0px;
+    background-color: #ffffff;
+}
+.page-navigation {
+    display: flex;
+    flex-direction: row;
+    min-height: 56px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header-navigation-list-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 1; 
+}
+.header-logo {
+    width: 140px;
+    height: 72px;
+    min-height: 56px;
+    order: 2;
+}
+.header-navigation-list-right {
+    display: flex;
+    flex-direction: row;
+    order: 3;
+}
+.page-navigation li {
+    width: 239px;
+    text-align: center;
+}
+.container {
+    order: 1;
+    min-height: 2780px;
+    margin: 0px;
+    margin-top: -12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.reasons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 216px;
+}
+.reasons-list {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin-top: 40px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.row:last-of-type {
+    margin-bottom: 30px;
+}
+.for-travel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+.for-travel div, .for-travel form{
+    width: 435px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.for-travel form {
+    width: 568px; 
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    order: 3;
+    background-color: #ffffff;
+    opacity: 0.9;
+    min-height: 120px;
+    width: 100%;
+}
+.catalog-main-container {
+    display: flex;
+    flex-direction: column;
+    background-color:#f2f2f2;
+
+}
+.catalog li {
+    display: flex;
+    flex-direction: row;
+    background-color:#fefefe;
+    width: 1200px;
+    min-height: 80px;
+    margin-bottom: 1px; 
+    padding: 31px 72px;
+}
+.rating {
+    display: flex;
+    flex-direction: column;
 }
