@@ -7,15 +7,14 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
-        <section class="container">
+    <body class="content">
+        <div class="container">
             <header class="page-header-container">
-                <a class="header-logo" href="index.html">Логотип Седона</a> 
+                <div class="header-logo" href="index.html">Логотип Седона</div> 
                 <nav class="page-navigation"> 
                     <ul class="header-navigation-list">
                         <li><a href="#" class="link">Информация</a></li>
                         <li><a href="#" class="link">Фото и видео</a></li>
-                        <li></li>
                         <li><a href="#" class="link">Карта штата</a></li>
                         <li><a href="catalog.html" class="link">Гостиницы</a></li>
                     </ul>
@@ -23,10 +22,9 @@
             </header>
             <main class="content">
                 <section class="motto">
-                    <h1 class="hidden">Sedona</h1>
-                    <p class="hidden">Welcome<br>Because the Grand Canyon Sucks</p>
+                    <h1 class="visually-hidden">Sedona</h1>
+                    <p class="visually-hidden">Welcome<br>Because the Grand Canyon Sucks</p>
                     <div class="welcome"></div>
-                    <div class="mask"></div>
                 </section>
                 <section class="reasons">
                     <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -41,15 +39,15 @@
                             <div class="first-pic"></div>
                         </div>
                         <div class="row">
-                            <div class="no-pic">
+                            <div class="second-row home">
                                 <h3>Жильё</h3>
                                 <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
                             </div>
-                            <div class="no-pic">
+                            <div class="second-row food">
                                 <h3>Еда</h3>
                                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                             </div>
-                            <div class="no-pic">
+                            <div class="second-row souvenirs">
                                 <h3>Сувениры</h3>
                                 <p>Не только китайского, но и местного производства!</p>
                             </div>
@@ -63,59 +61,59 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div>
+                            <div class="row-bg-gray">
                                 <h3>Небольшая<br>площадь</h3>
                                 <p>— №3 —</p>
-                                <p>Все достопримечательности находятся очень близко</p>
+                                <p>Все достопримечательности<br> находятся очень близко</p>
                             </div>
-                            <div>
+                            <div class="row-bg-gray">
                                 <h3>Красивая<br> дорога</h3>
                                 <p>— №4 —</p>
-                                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                                <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
                             </div>
-                            <div>
+                            <div class="row-bg-gray">
                                 <h3>Мало<br> туристов</h3>
                                 <p>— №5 —</p>
-                                <p>Большинство едет в гранд каньон и толпится там</p>
+                                <p>Большинство едет в гранд каньон<br> и толпится там</p>
                             </div>
                         </div>
                     </section>
                 </section>
                 <section class="for-travel">
-                    <div>
+                    <div class="for-travel-text">
                         <h2>Заинтересовались?</h2>
                         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                     </div>
-                    <form action="https://echo.htmlacademy.ru" method="post">
-                        <fieldset>
-                            <legend class="brown">Поиск гостиницы в Седоне</legend>
-                            <div>
-                                <label for="arrival-date">Дата заезда:</label>
-                                <input type="text" id="arrival-date" name="arrival-date"class="form full" placeholder="24 апреля 2017"> 
-                            </div>
-                            <div>
-                                <label for="departure-date">Дата выезда:</label>
-                                <input type="text" id="departure-date" name="departure-date"class="form full" placeholder="4 июля 2017">
-                            </div>
-                            <div class="half-width">
-                                <label for="adults-amount">Взрослые:</label>
-                                <button class="change-value form">-</button>
-                                <input type="text" value="1" min="1" max="10" name="adults-amount" id="adults-amount" class="form">
-                                <button class="change-value form">+</button>
-                                <label for="children-amount">Дети:</label>
-                                <button class="change-value form">-</button>
-                                <input type="text" value="0" min="0" max="10" name="children-amount" id="children-amount" class="form">
-                                <button class="change-value form">+</button>  
-                            </div>
-                            <button class="search blue" type="submit">Найти</button>
-                        </fieldset>
-                    </form>
+                    <div class="form-wrapper">
+                        <button class="button button-search-hotel">Поиск гостиницы в Седоне</button>
+                        <form action="https://echo.htmlacademy.ru" method="post">
+                            <fieldset>
+                                <div>
+                                    <label for="arrival-date">Дата заезда:</label>
+                                    <input type="text" id="arrival-date" name="arrival-date"class="form full" placeholder="24 апреля 2017"> 
+                                </div>
+                                <div>
+                                    <label for="departure-date">Дата выезда:</label>
+                                    <input type="text" id="departure-date" name="departure-date"class="form full" placeholder="4 июля 2017">
+                                </div>
+                                <div class="half-width">
+                                    <label for="adults-amount">Взрослые:</label>
+                                    <button class="change-value form">-</button>
+                                    <input type="text" value="1" min="1" max="10" name="adults-amount" id="adults-amount" class="form">
+                                    <button class="change-value form">+</button>
+                                    <label for="children-amount">Дети:</label>
+                                    <button class="change-value form">-</button>
+                                    <input type="text" value="0" min="0" max="10" name="children-amount" id="children-amount" class="form">
+                                    <button class="change-value form">+</button>  
+                                </div>
+                                <button class="search blue" type="submit">Найти</button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </section>
             </main>
             <footer class="footer-container">
-                <div>
                     <p>#visitsedona</p>
-                </div>
                 <div>
                     <ul class="social-icons">
                         <li class="twitter"><a href="#">Twitter</a></li>
@@ -127,6 +125,6 @@
                     <div class="htmlacademy-logo">website by </div>
                 </div>
             </footer>
-        </section>
+        </div>
     </body>
 </html>
