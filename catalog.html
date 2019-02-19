@@ -16,13 +16,69 @@
                         <li><a href="#" class="link">Информация</a></li>
                         <li><a href="#" class="link">Фото и видео</a></li>
                         <li><a href="#" class="link">Карта штата</a></li>
-                        <li><a href="catalog.html" class="link">Гостиницы</a></li>
+                        <li><a href="catalog.html" class="link current">Гостиницы</a></li>
                     </ul>
                 </nav>
             </header>
             <main class="catalog">
-                <form>
+                <form class="filters">
+                    <div class="left-side">
+                        <fieldset>
+                            <legend>Инфраструктура:</legend>
+                            <div>
+                                <label><input class="checkbox" checked type="checkbox" id="pool"><span></span>Бассейн</label>
+                            </div>
+                            <div>
+                                <label><input class="checkbox" type="checkbox" id="park"><span></span>Парковка</label>
+                            </div>
+                            <div>
+                                <label><input class="checkbox" type="checkbox" id="wi-fi"><span></span>wi-fi</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Тип жилья:</legend>
+                            <div>
+                                <label><input class="checkbox" checked type="checkbox" id="hotel"><span></span>Гостиница</label>
+                            </div>
+                            <div>
+                                <label><input class="checkbox" checked type="checkbox" id="motel"><span></span>Мотель</label>
+                            </div>
+                            <div>
+                                <label><input class="checkbox" checked type="checkbox" id="apartments"><span></span>Апартаменты</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="right-side">
+                        <fieldset>
+                            <legend>Стоимость в сутки:</legend>
+                            <div class="price-controls">
+                                <label class="min-price" for="min-price">от<input type="text" name="min-price" value="0" id="min-price"></label>
+                                <label class="max-price" for="max-price">до<input type="text" name="max-price" value="3000" id="max-price"></label>
+                            </div>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="range-toggle range-toggle-min"></div>
+                                <div class="range-toggle range-toggle-max"></div>
+                            </div>
+                            <button class="btn-transparent" type="submit">Показать</button>
+                        </fieldset>
+                    </div>
                 </form>
+                <section class="found">
+                    <div>
+                        <h2>Найдено: 3</h2>
+                        <span>Сотрировка:</span>
+                        <span class="sort active">По цене</span>
+                        <span class="sort">По типу</span>
+                        <span class="sort">По рейтингу</span>
+                    </div>
+                    <div class="arrows">
+                        <div class="up"></div>
+                        <div class="down"></div>
+                    </div>
+                </section>
                 <h1 class="visually-hidden">Список гостиниц</h1>
                 <section class="catalog">
                     <ul class="catalog-list">

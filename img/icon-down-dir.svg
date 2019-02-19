@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+<svg 
+xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="11" height="60" 
+viewBox="0 0 11 10">
+<symbol id="down">
+<path d="M5.5 10L0 0h11"/>
+</symbol>
+<use xlink:href="#down" x="0" y="0" fill="#cacaca" />
+<use xlink:href="#down" x="0" y="12" fill="#000000" />
+<use xlink:href="#down" x="0" y="25" fill="#81b3d2" />
+</svg>
