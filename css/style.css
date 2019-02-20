@@ -12,10 +12,10 @@ body {
 }
 html {
     box-sizing: border-box;
-    }
+}
 *, *::before, *::after {
     box-sizing: inherit;
-    }
+}
 .link {
     text-decoration: none;
     color: #000000;
@@ -220,12 +220,13 @@ div h3 {
 }
 .rating p {
     width: 110px;
-    height: 27px;
+    padding: 3px 15px;
     background-color: #f2f2f2;
     vertical-align: middle;
+    color: #666666;
 }
 .star {
-    height: 17px;   
+    height: 17px;
     background-image: url("../img/star.svg");
     background-size: 18px 17px;
     background-position: left;
@@ -254,8 +255,8 @@ div h3 {
     font-weight: 700;
     border: none;
     width: 450px;
-    height: 58px;
-    margin: 55px auto;  
+    padding: 17px 190px;
+    margin: 55px auto;
 }
 footer p {
     font-size: 21px;
@@ -275,31 +276,42 @@ footer p {
     font-size: 0;
     line-height:0;
 }
-.social-icons div {
+.icon {
+    position: relative;
+    display: inline-block;
     background-repeat: no-repeat;
-    background-position: center;
+    font-size: 0;
     width: 46px;
     height: 48px;
+    background-color: #81b3d2;
 }
-.social-icons .twitter div{
-    background-image: url("../img/twitter-icon.svg");
-    background-size: 17px 15px;
+.icon::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-.social-icons .facebook div {
-    background-image: url("../img/facebook-icon.svg");
-    background-size: 12px 22px;
-}
-.social-icons .youtube div {
-    background-image: url("../img/youtube-icon.svg");
-    background-size: 20px 16px;
-}
-.social-icons div:hover {
+.icon:hover {
     background-color: #669ec0;
 }
-.social-icons div:active {
-    opacity: 0.3;
+.icon:active {
     background-color: #5496bd;
 }
+.icon:active::before {
+    opacity: 0.3;
+}
+.twitter::before {
+    background-image: url("../img/twitter-icon.svg");
+}
+.facebook::before {
+    background-image: url("../img/facebook-icon.svg");
+}
+.youtube::before {
+    background-image: url("../img/youtube-icon.svg");
+}
+
 .footer-logo p {
     font-size: 14px;
     font-weight: 400;
@@ -357,6 +369,7 @@ footer p {
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 .content {
     background-color: #f2f2f2;
@@ -432,6 +445,10 @@ footer p {
 }
 .footer-logo {
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer-container p {
     margin: auto;
@@ -447,43 +464,34 @@ footer p {
 .htmlacademy-logo {
     background-image: url("../img/logo-htmlacademy.svg");
     background-repeat: no-repeat;
-    background-size: 115px 224px;
-    background-position: 80px -90px;
-    padding-top: 8px;
-    width: 200px;
-    margin: 0px;
-    height: 43px;
+    background-size: 115px 123px;
+    background-position: center 0;
+    width: 115px;
+    margin-left: 5px;
+    height: 41px;
 }
 .htmlacademy-logo:hover {
-    background-position: 80px -135px;
+    background-position: center -42px;
 }
 .htmlacademy-logo:active {
-    background-position: 80px -181px;
-}
-.catalog {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1px;
-    background-color: #f2f2f2;
+    background-position: center -84px;
 }
 .catalog-list {
-    width: 100%;
-    margin-left: -80px;
-    margin-top: 0px;
-    margin-bottom: 1px;
+    margin: 0px;
+    padding: 0px;
 }
 .catalog-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #ffffff;
-    margin-bottom: 1px;
     min-height: 150px;
     width: 1200px;
     margin: 0 auto; 
+    border-top: 1px solid #e5e5e5;
+}
+.catalog-item:last-child {
+    border-bottom: 1px solid #e5e5e5;
 }
 .hotel-info {
     display: flex;
@@ -599,6 +607,8 @@ footer p {
     line-height: 21px;
 }
 .price-controls {
+    display: flex;
+    align-items: center;
     position: relative;
     height: 36px;
     margin-bottom: 20px;
@@ -732,30 +742,30 @@ footer p {
 }
 .up {
     background-image: url("../img/icon-up-dir.svg");
-    background-size: 10px 80px;
-    background-position-y:-35px;
+    background-size: 10px 34px;
+    background-position-y: 0px;
     width: 10px;
     height: 11px;
     margin: 10px;
 }
 .up:hover {
-    background-position-y:-45px;
+    background-position-y:-12px;
 }
 .up:active {
-    background-position-y:-57px;
+    background-position-y:-23px;
 }
 .down {
     background-image: url("../img/icon-down-dir.svg");
-    background-size: 10px 80px;
-    background-position-y:-35px;
+    background-size: 10px 34px;
+    background-position-y: 0;
     width: 10px;
-    height: 11px;
+    height: 10px;
 }
 .down:hover {
-    background-position-y:-45px;
+    background-position-y:-12px;
 }
 .down:active {
-    background-position-y:-57px;
+    background-position-y:-23px;
 }
 .arrows {
     margin-right: 70px;

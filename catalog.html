@@ -20,31 +20,49 @@
                     </ul>
                 </nav>
             </header>
-            <main class="catalog">
+            <main>
                 <form class="filters">
                     <div class="left-side">
                         <fieldset>
                             <legend>Инфраструктура:</legend>
                             <div>
-                                <label><input class="checkbox" checked type="checkbox" id="pool"><span></span>Бассейн</label>
+                                <label>
+                                    <input class="checkbox" checked type="checkbox" id="pool">
+                                    <span class="visually-hidden"></span>Бассейн
+                                </label>
                             </div>
                             <div>
-                                <label><input class="checkbox" type="checkbox" id="park"><span></span>Парковка</label>
+                                <label>
+                                    <input class="checkbox" type="checkbox" id="park">
+                                    <span class="visually-hidden"></span>Парковка
+                                </label>
                             </div>
                             <div>
-                                <label><input class="checkbox" type="checkbox" id="wi-fi"><span></span>wi-fi</label>
+                                <label>
+                                    <input class="checkbox" type="checkbox" id="wi-fi">
+                                    <span class="visually-hidden"></span>wi-fi
+                                </label>
                             </div>
                         </fieldset>
                         <fieldset>
                             <legend>Тип жилья:</legend>
                             <div>
-                                <label><input class="checkbox" checked type="checkbox" id="hotel"><span></span>Гостиница</label>
+                                <label>
+                                    <input class="checkbox" checked type="checkbox" id="hotel">
+                                    <span class="visually-hidden"></span>Гостиница
+                                </label>
                             </div>
                             <div>
-                                <label><input class="checkbox" checked type="checkbox" id="motel"><span></span>Мотель</label>
+                                <label>
+                                    <input class="checkbox" checked type="checkbox" id="motel">
+                                    <span class="visually-hidden"></span>Мотель
+                                </label>
                             </div>
                             <div>
-                                <label><input class="checkbox" checked type="checkbox" id="apartments"><span></span>Апартаменты</label>
+                                <label>
+                                    <input class="checkbox" checked type="checkbox" id="apartments">
+                                    <span class="visually-hidden"></span>Апартаменты
+                                </label>
                             </div>
                         </fieldset>
                     </div>
@@ -80,7 +98,7 @@
                     </div>
                 </section>
                 <h1 class="visually-hidden">Список гостиниц</h1>
-                <section class="catalog">
+                <section>
                     <ul class="catalog-list">
                         <li class="catalog-item">
                             <div class="hotel-info">
@@ -152,25 +170,23 @@
                 </section>
             </main>
             <footer class="footer-container">
-                    <p>#visitsedona</p>
-                    <ul class="social-icons">
-                        <li class="twitter">
-                            <a href="#">Twitter</a>
-                            <div></div>
-                        </li>
-                        <li class="facebook">
-                            <a href="#">Facebook</a>
-                            <div></div>
-                        </li>
-                        <li class="youtube">
-                            <a href="#">Youtube</a>
-                            <div></div>
-                        </li>
-                    </ul>
-                    <div class="footer-logo">
-                        <div class="htmlacademy-logo">website by </div>
-                    </div>
-                </footer>
+                <p>#visitsedona</p>
+                <ul class="social-icons">
+                    <li>
+                        <a class="icon twitter" href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a class="icon facebook" href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a class="icon youtube" href="#">Youtube</a>
+                    </li>
+                </ul>
+                <div class="footer-logo">
+                    <span>website by</span>
+                    <div class="htmlacademy-logo"></div>
+                </div>
+            </footer>
         </section>
     </body>
 </html>

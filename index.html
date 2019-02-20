@@ -20,7 +20,7 @@
                     </ul>
                 </nav>
             </header>
-            <main class="content">
+            <main>
                 <section class="motto">
                     <h1 class="visually-hidden">Sedona</h1>
                     <p class="visually-hidden">Welcome<br>Because the Grand Canyon Sucks</p>
@@ -102,16 +102,16 @@
                                 </div>
                                 <div class="visitors-amount">
                                     <div class="half-width">
-                                            <label for="adults-amount">Взрослые:</label>
-                                            <button class="change-value form">-</button>
-                                            <input type="text" value="1" min="1" max="10" name="adults-amount" id="adults-amount" class="form">
-                                            <button class="change-value form">+</button>
+                                        <label for="adults-amount">Взрослые:</label>
+                                        <button class="change-value form">-</button>
+                                        <input type="text" value="1" name="adults-amount" id="adults-amount" class="form">
+                                        <button class="change-value form">+</button>
                                     </div>
                                     <div class="half-width">
-                                            <label class="children-amount" for="children-amount">Дети:</label>
-                                            <button class="change-value form">-</button>
-                                            <input type="text" value="0" min="0" max="10" name="children-amount" id="children-amount" class="form">
-                                            <button class="change-value form">+</button>
+                                        <label class="children-amount" for="children-amount">Дети:</label>
+                                        <button class="change-value form">-</button>
+                                        <input type="text" value="0" name="children-amount" id="children-amount" class="form">
+                                        <button class="change-value form">+</button>
                                     </div>
                                 </div>
                                 <button class="search blue" type="submit">Найти</button>
@@ -123,21 +123,19 @@
             <footer class="footer-container main-footer">
                 <p>#visitsedona</p>
                 <ul class="social-icons">
-                    <li class="twitter">
-                        <a href="#">Twitter</a>
-                        <div></div>
+                    <li>
+                        <a class="icon twitter" href="#">Twitter</a>
                     </li>
-                    <li class="facebook">
-                        <a href="#">Facebook</a>
-                        <div></div>
+                    <li>
+                        <a class="icon facebook" href="#">Facebook</a>
                     </li>
-                    <li class="youtube">
-                        <a href="#">Youtube</a>
-                        <div></div>
+                    <li>
+                        <a class="icon youtube" href="#">Youtube</a>
                     </li>
                 </ul>
                 <div class="footer-logo">
-                    <div class="htmlacademy-logo">website by </div>
+                    <span>website by</span>
+                    <div class="htmlacademy-logo"></div>
                 </div>
             </footer>
         </div>

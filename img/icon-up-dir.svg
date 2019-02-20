@@ -1,12 +1,12 @@
 <svg 
 xmlns="http://www.w3.org/2000/svg" 
 xmlns:xlink="http://www.w3.org/1999/xlink"
-width="11" height="60" 
-viewBox="0 0 11 10">
+width="11" height="34" 
+viewBox="11 10">
 <symbol id="up">
 <path d="M5.5 0L0 10h11z"/>
 </symbol>
 <use xlink:href="#up" x="0" y="0" fill="#cacaca" />
 <use xlink:href="#up" x="0" y="12" fill="#000000" />
-<use xlink:href="#up" x="0" y="25" fill="#81b3d2" />
+<use xlink:href="#up" x="0" y="23" fill="#81b3d2" />
 </svg>
