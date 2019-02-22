@@ -15,10 +15,10 @@
                     <a class="header-logo" href="index.html">Логотип Седона</a> 
                     <nav class="page-navigation"> 
                         <ul class="header-navigation-list">
-                            <li><a href="#" class="link">Информация</a></li>
-                            <li><a href="#" class="link">Фото и видео</a></li>
-                            <li><a href="#" class="link">Карта штата</a></li>
-                            <li><a href="catalog.html" class="link current">Гостиницы</a></li>
+                            <li><a href="#" class="link left">Информация</a></li>
+                            <li><a href="#" class="link left">Фото и видео</a></li>
+                            <li><a href="#" class="link right">Карта штата</a></li>
+                            <li><a href="catalog.html" class="link current right">Гостиницы</a></li>
                         </ul>
                     </nav>
                 </header>
@@ -73,8 +73,12 @@
                         <fieldset>
                             <legend>Стоимость в сутки:</legend>
                             <div class="price-controls">
-                                <label class="min-price" for="min-price">от<input type="text" name="min-price" value="0" id="min-price"></label>
-                                <label class="max-price" for="max-price">до<input type="text" name="max-price" value="3000" id="max-price"></label>
+                                <label class="min-price" for="min-price">
+                                    от<input type="text" method="post" action="" name="min-price" value="0" id="min-price">
+                                </label>
+                                <label class="max-price" for="max-price">
+                                    до<input type="text" method="post" action="" name="max-price" value="3000" id="max-price">
+                                </label>
                             </div>
                             <div class="range-controls">
                                 <div class="scale">
@@ -187,7 +191,7 @@
                 </ul>
                 <div class="footer-logo">
                     <span>website by</span>
-                    <div class="htmlacademy-logo"></div>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo"></a>
                 </div>
             </footer>
         </div>

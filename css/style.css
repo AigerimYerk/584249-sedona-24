@@ -65,17 +65,29 @@ section .welcome {
 }
 .for-travel form {
     position: absolute;
-    top: 2155px;
-    left: center;
+    left: 50%;
+    margin-left: -284px;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
     background-color: #ffffff;
     width: 568px;
+}
+@keyframes slide {
+    0% {
+      transform: translateY(-400px);
+    }
+      100% {
+      transform: translateY(0);
+    }
+  }
+.form-wraper {
+    position: relative;
 }
 .search-form {
     display: none;
 }
 .search-form-open {
     display: block;
+    animation: slide 1.2s;
 }
 .for-travel-text {
     margin: 30px 0;
@@ -167,10 +179,10 @@ form .full{
 .full input:hover {
     background-color: #ebebeb;
 }
-.full input:focus {
-    background-color: #ffffff;
-    border:2px solid #e5e5e5;
-}
+    .full input:focus {
+        background-color: #ffffff;
+        outline:2px solid #e5e5e5;
+    }
 .half-width {
     display: flex;
     flex-direction: row;
@@ -392,13 +404,12 @@ footer p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 0px;
+    margin: 0 70px;
     padding: 0px;
 }
 .page-navigation li {
     width: 20%;
     padding: 15px 0;
-    text-align: center;
 }
 .header-navigation-list li:nth-of-type(2) {
     margin-right: 70px;
@@ -406,6 +417,12 @@ footer p {
 .header-navigation-list li:nth-child(3) {
     margin-left: 70px;
 } 
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
 .header-logo {
     position: absolute;
     background-image: url("../img/logo-sedona.svg");

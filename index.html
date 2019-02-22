@@ -13,10 +13,10 @@
                 <div class="header-logo">Логотип Седона</div> 
                 <nav class="page-navigation"> 
                     <ul class="header-navigation-list">
-                        <li><a href="#" class="link current">Информация</a></li>
-                        <li><a href="#" class="link">Фото и видео</a></li>
-                        <li><a href="#" class="link">Карта штата</a></li>
-                        <li><a href="catalog.html" class="link">Гостиницы</a></li>
+                        <li><a href="#" class="link current left">Информация</a></li>
+                        <li><a href="#" class="link left">Фото и видео</a></li>
+                        <li><a href="#" class="link right">Карта штата</a></li>
+                        <li><a href="catalog.html" class="link right">Гостиницы</a></li>
                     </ul>
                 </nav>
             </header>
@@ -135,26 +135,10 @@
                 </ul>
                 <div class="footer-logo">
                     <span>website by</span>
-                    <div class="htmlacademy-logo"></div>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo"></a>
                 </div>
             </footer>
         </div>
-        <script>
-            var btn = document.querySelector(".button-search-hotel");
-            var form = document.querySelector(".search-form");
-            var ar_date = form.querySelector("[name=arrival-date]");
-            var dep_date = form.querySelector("[name=departure-date]");
-            btn.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                form.classList.toggle("search-form-open");
-                ar_date.focus();
-            });
-            form.addEventListener("submit", function (evt) {
-                if (!ar_date.value || !dep_date.value) {
-                    evt.preventDefault();
-                    console.log("Нужно ввести даты заезда и выезда");
-                 }
-            });
-        </script>
+        <script src="/js/scripts.js"></script>
     </body>
 </html>
