@@ -8,19 +8,22 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body class="content">
-        <section class="container">
-            <header class="page-header-container">
-                <a class="header-logo" href="index.html">Логотип Седона</a> 
-                <nav class="page-navigation"> 
-                    <ul class="header-navigation-list">
-                        <li><a href="#" class="link">Информация</a></li>
-                        <li><a href="#" class="link">Фото и видео</a></li>
-                        <li><a href="#" class="link">Карта штата</a></li>
-                        <li><a href="catalog.html" class="link current">Гостиницы</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
+        <div class="container">
+            <section class="container">
+                <h2 class="visually-hidden">Гостиницы в Седоне</h2>
+                <header class="page-header-container">
+                    <a class="header-logo" href="index.html">Логотип Седона</a> 
+                    <nav class="page-navigation"> 
+                        <ul class="header-navigation-list">
+                            <li><a href="#" class="link">Информация</a></li>
+                            <li><a href="#" class="link">Фото и видео</a></li>
+                            <li><a href="#" class="link">Карта штата</a></li>
+                            <li><a href="catalog.html" class="link current">Гостиницы</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </section>
+            <main class="container">
                 <form class="filters">
                     <div class="left-side">
                         <fieldset>
@@ -28,19 +31,19 @@
                             <div>
                                 <label>
                                     <input class="checkbox" checked type="checkbox" id="pool">
-                                    <span class="visually-hidden"></span>Бассейн
+                                    <span></span>Бассейн
                                 </label>
                             </div>
                             <div>
                                 <label>
                                     <input class="checkbox" type="checkbox" id="park">
-                                    <span class="visually-hidden"></span>Парковка
+                                    <span></span>Парковка
                                 </label>
                             </div>
                             <div>
                                 <label>
                                     <input class="checkbox" type="checkbox" id="wi-fi">
-                                    <span class="visually-hidden"></span>wi-fi
+                                    <span></span>wi-fi
                                 </label>
                             </div>
                         </fieldset>
@@ -49,19 +52,19 @@
                             <div>
                                 <label>
                                     <input class="checkbox" checked type="checkbox" id="hotel">
-                                    <span class="visually-hidden"></span>Гостиница
+                                    <span></span>Гостиница
                                 </label>
                             </div>
                             <div>
                                 <label>
                                     <input class="checkbox" checked type="checkbox" id="motel">
-                                    <span class="visually-hidden"></span>Мотель
+                                    <span></span>Мотель
                                 </label>
                             </div>
                             <div>
                                 <label>
                                     <input class="checkbox" checked type="checkbox" id="apartments">
-                                    <span class="visually-hidden"></span>Апартаменты
+                                    <span></span>Апартаменты
                                 </label>
                             </div>
                         </fieldset>
@@ -97,12 +100,12 @@
                         <div class="down"></div>
                     </div>
                 </section>
-                <h1 class="visually-hidden">Список гостиниц</h1>
                 <section>
+                    <h1 class="visually-hidden">Список гостиниц</h1>
                     <ul class="catalog-list">
                         <li class="catalog-item">
                             <div class="hotel-info">
-                                <img src="img/hotel1.jpg" width="135" height="90" class="img">
+                                <img src="img/hotel1.jpg" width="135" height="90" class="img" alt="Amara Resort & SPA">
                                 <div>
                                     <h2><a href="#" class="link">Amara Resort & SPA</a></h2>
                                     <div class="catalog-row">
@@ -118,13 +121,13 @@
                                 </div>
                             </div>
                             <div class="rating">
-                               <div class="star star-4"></div>
-                               <p>рейтинг: 8,5</p>
+                                <div class="star star-4"></div>
+                                <p>рейтинг: 8,5</p>
                             </div>
                         </li>
                         <li class="catalog-item">
                             <div class="hotel-info">
-                                <img src="img/hotel3.jpg" width="135" height="90" class="img">
+                                <img src="img/hotel3.jpg" width="135" height="90" class="img" alt="Desert Quail inn">
                                 <div>
                                     <h2><a href="#" class="link">Desert Quail inn</a></h2>
                                     <div class="catalog-row">
@@ -146,7 +149,7 @@
                         </li>
                         <li class="catalog-item">
                             <div class="hotel-info">
-                                <img src="img/hotel2.jpg" width="135" height="90" class="img">
+                                <img src="img/hotel2.jpg" width="135" height="90" class="img" alt="Villas At Poco Diablo">
                                 <div>
                                     <h2><a href="#" class="link">Villas At Poco Diablo</a></h2>
                                     <div class="catalog-row">
@@ -187,6 +190,6 @@
                     <div class="htmlacademy-logo"></div>
                 </div>
             </footer>
-        </section>
+        </div>
     </body>
 </html>

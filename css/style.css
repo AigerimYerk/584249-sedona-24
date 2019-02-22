@@ -13,6 +13,13 @@ body {
 html {
     box-sizing: border-box;
 }
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -29,13 +36,6 @@ html {
 }
 li {
     list-style-type: none;
-}
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
 }
 .motto {
     background-image: url("../img/mask.svg"), url("../img/sedona.jpg");
@@ -64,9 +64,18 @@ section .welcome {
     padding-top: 45px;
 }
 .for-travel form {
+    position: absolute;
+    top: 2155px;
+    left: center;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
     background-color: #ffffff;
     width: 568px;
+}
+.search-form {
+    display: none;
+}
+.search-form-open {
+    display: block;
 }
 .for-travel-text {
     margin: 30px 0;
@@ -144,16 +153,16 @@ form .full{
     margin-bottom: -5px;
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
-    background-position: 0;
-    background-size: 21px 115px;
+    background-position-y: -1px;
+    background-size: 21px 69px;
     width: 21px;
-    height: 21px;
+    height: 22px;
 }
 .calendar:hover {
-    background-position: 0 -70px;
+    background-position: 0 -24px;
 }
 .calendar:active {
-    background-position: 0 -93px;
+    background-position: 0 -46px;
 }
 .full input:hover {
     background-color: #ebebeb;
@@ -228,24 +237,24 @@ div h3 {
 .star {
     height: 17px;
     background-image: url("../img/star.svg");
-    background-size: 18px 17px;
-    background-position: left;
+    background-size: 22px 17px;
+    background-position: right;
     background-repeat: repeat-x;
 }
 .star-5 {
-    width: 90px;
+    width: 100px;
 }
 .star-4 {
-    width: 72px;
+    width: 87px;
 }
 .star-3 {
-    width: 54px;
+    width: 65px;
 }
 .star-2 {
-    width: 36px;
+    width: 46px;
 }
 .star-1 {
-    width: 18px;
+    width: 28px;
 }
 .search {
     background-color: #81b3d2;
@@ -535,15 +544,11 @@ footer p {
 .filters {
     display: flex;
     flex-direction: row;
-    width: 1200px;
     justify-content: space-between;
     background-image: url("../img/filter_background.jpg");
     background-repeat: no-repeat;
     background-position: 0px -280px;
-    min-height: 220px;
     color: #ffffff;
-    font-family: "PT Sans";
-    font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     text-transform: uppercase;
@@ -562,12 +567,15 @@ footer p {
 }
 .checkbox {
     width: 0px;
-}
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    }
 .checkbox+span{
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
-    background-size: 23px 23px;
-    background-position: center;
+    background-size: 23px 47px;
+    background-position: 0 0;
     width: 23px;
     height: 23px;
     display: inline-block;
@@ -576,20 +584,23 @@ footer p {
     top: 5px;
     cursor: pointer;
 }
+.checkbox:disabled+span {
+    background-position: 0 -24px;
+}
+.checkbox:checked:disabled+span {
+    background-position: 0 -25px;
+}
 .checkbox:checked+span {
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
-    background-size: 27px 23px;
-    background-position: center;
+    background-size: 27px 48px;
+    background-position: 0 0;
     width: 27px;
     height: 23px;
     display: inline-block;
     margin-right: 10px;
     position: relative;
     top: 5px;
-}
-.filters legend:hover {
-    background-color: none;
 }
 .left-side div {
     margin-top: 20px;
@@ -677,6 +688,8 @@ footer p {
 }
 .range-toggle:hover {
     background: #1c4f80;
+    width: 22px;
+    height: 22px;
 }
 .range-toggle-max {
     left: 80%;

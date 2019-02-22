@@ -10,10 +10,10 @@
     <body class="content">
         <div class="container">
             <header class="page-header-container">
-                <div class="header-logo" href="index.html">Логотип Седона</div> 
+                <div class="header-logo">Логотип Седона</div> 
                 <nav class="page-navigation"> 
                     <ul class="header-navigation-list">
-                        <li><a href="#" class="link">Информация</a></li>
+                        <li><a href="#" class="link current">Информация</a></li>
                         <li><a href="#" class="link">Фото и видео</a></li>
                         <li><a href="#" class="link">Карта штата</a></li>
                         <li><a href="catalog.html" class="link">Гостиницы</a></li>
@@ -86,17 +86,17 @@
                     </div>
                     <div class="form-wrapper">
                         <button class="button button-search-hotel">Поиск гостиницы в Седоне</button>
-                        <form action="https://echo.htmlacademy.ru" method="post">
+                        <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
                             <fieldset>
                                 <div class="date">
                                     <div class="full">
                                         <label for="arrival-date">Дата заезда:</label>
-                                        <input type="text" id="arrival-date" name="arrival-date"class="form" placeholder="24 апреля 2017"> 
+                                        <input type="text" id="arrival-date" name="arrival-date" class="form" placeholder="24 апреля 2017"> 
                                         <div class="calendar"></div>
                                     </div>
                                     <div class="full">
                                         <label for="departure-date">Дата выезда:</label>
-                                        <input type="text" id="departure-date" name="departure-date"class="form" placeholder="4 июля 2017">
+                                        <input type="text" id="departure-date" name="departure-date" class="form" placeholder="4 июля 2017">
                                         <div class="calendar"></div>
                                     </div>
                                 </div>
@@ -139,5 +139,22 @@
                 </div>
             </footer>
         </div>
+        <script>
+            var btn = document.querySelector(".button-search-hotel");
+            var form = document.querySelector(".search-form");
+            var ar_date = form.querySelector("[name=arrival-date]");
+            var dep_date = form.querySelector("[name=departure-date]");
+            btn.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                form.classList.toggle("search-form-open");
+                ar_date.focus();
+            });
+            form.addEventListener("submit", function (evt) {
+                if (!ar_date.value || !dep_date.value) {
+                    evt.preventDefault();
+                    console.log("Нужно ввести даты заезда и выезда");
+                 }
+            });
+        </script>
     </body>
 </html>
