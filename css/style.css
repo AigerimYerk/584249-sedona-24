@@ -64,30 +64,18 @@ section .welcome {
     padding-top: 45px;
 }
 .for-travel form {
-    position: absolute;
-    left: 50%;
-    margin-left: -284px;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
     background-color: #ffffff;
     width: 568px;
 }
-@keyframes slide {
-    0% {
-      transform: translateY(-400px);
-    }
-      100% {
-      transform: translateY(0);
-    }
-  }
 .form-wraper {
     position: relative;
 }
 .search-form {
-    display: none;
+    display: block;
 }
 .search-form-open {
-    display: block;
-    animation: slide 1.2s;
+    display: none;
 }
 .for-travel-text {
     margin: 30px 0;
@@ -102,11 +90,11 @@ form fieldset {
     border: none;
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column; 
 }
-.date {
-    margin-top: 50px;
-    margin-left: 15px;
+.main-form {
+    padding: 55px;
 }
 .form {
     background-color: #f2f2f2;
@@ -139,6 +127,7 @@ form fieldset {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
     width: 100%;
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
@@ -147,26 +136,33 @@ form fieldset {
     background-position: 0 291px;
     text-align: center;
 }
-form .full{
-    margin: 20px 0;
-}
 .full input {
-    width: 325px;
-    padding: 5px 10px;
+    width: 335px;
+    height: 38px;
+    padding: 5px 15px;
     text-align: left;
-    margin: 0 20px;
+    vertical-align: middle;
+    margin-left: 20px;
 }
-.full label {
-    margin-left: -20px;
+.full .less {
+    margin-left: 17px;
+}
+.full {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
 }
 .calendar {
     display: inline-block;
-    margin-left: -55px;
-    margin-bottom: -5px;
+    position: relative;
+    right: 10px;
+    margin-left: -25px;
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
     background-position-y: -1px;
-    background-size: 21px 69px;
+    background-size: 21px 68px;
     width: 21px;
     height: 22px;
 }
@@ -179,33 +175,43 @@ form .full{
 .full input:hover {
     background-color: #ebebeb;
 }
-    .full input:focus {
-        background-color: #ffffff;
-        outline:2px solid #e5e5e5;
-    }
+.full input:focus {
+    background-color: #ffffff;
+    outline:2px solid #e5e5e5;
+}
+.half-width label {
+    margin-right: 40px;
+}
+.half-width:last-child label {
+    margin-right: 27px;
+}
+.half-width input:hover, .half-width button:hover {
+    background-color: #ebebeb;
+    color: #000000;
+}
+.half-width input:active, .half-width button:active {
+    background-color: #ebebeb;
+    color:#81b3d2;
+    background-color: #ffffff;
+    outline: 2px solid #e5e5e5;
+}
 .half-width {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 25px;
-    width: 50%;
+    padding-bottom: 50px;
 }
-.half-width label {
-    margin-right: 45px;
-}
-fieldset .visitors-amount {
+.visitors-amount {
     display: flex;
     flex-direction: row;
-    align-content: center;
     justify-content: space-between;
-    margin: 30px;
 }
 .half-width input, .half-width button {
-    width: 33px;
-    padding: 5px 10px;
-}
-.visitors-amount .children-amount {
-    margin-right: 35px;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    padding: 5px 15px;
 }
 .button-search-hotel:hover, .hotel-booking:hover {
      background-color: #604e43;
@@ -218,12 +224,6 @@ fieldset .visitors-amount {
     font-size: 22px;
     font-weight: 700;
     color: #a9a9a9;
-}
-.change-value:hover {
-    color: #000000;
-}
-.change-value:active {
-    color:#81b3d2;
 }
 .hotel-booking {
     font-size: 14px;
@@ -275,9 +275,7 @@ div h3 {
     text-transform: uppercase;
     font-weight: 700;
     border: none;
-    width: 450px;
-    padding: 17px 190px;
-    margin: 55px auto;
+    padding: 17px 195px;
 }
 footer p {
     font-size: 21px;
@@ -404,20 +402,20 @@ footer p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 0 70px;
+    margin: 0px;
     padding: 0px;
 }
 .page-navigation li {
     width: 20%;
-    padding: 15px 0;
+    padding: 15px 70px;
 }
 .header-navigation-list li:nth-of-type(2) {
-    margin-right: 70px;
+    margin-right: 120px;
 }
 .header-navigation-list li:nth-child(3) {
-    margin-left: 70px;
+    margin-left: 120px;
 } 
-.left {
+.header-navigation-list .left {
     text-align: left;
 }
 .right {
@@ -428,8 +426,8 @@ footer p {
     background-image: url("../img/logo-sedona.svg");
     background-repeat: no-repeat;
     background-position: center top;
-    width: 140px;
-    margin-left: -70px;
+    width: 240px;
+    margin-left: -120px;
     height: 72px;
     font-size: 0px;
     left: 50%;
@@ -463,7 +461,7 @@ footer p {
     width: 100%;
     background-color: #ffffff;
     opacity: 0.9;
-    min-height: 110px;
+    padding: 30px 0px;
     align-content: center;
 }
 .main-footer {
@@ -587,13 +585,13 @@ footer p {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    }
+}
 .checkbox+span{
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-size: 23px 47px;
     background-position: 0 0;
-    width: 23px;
+    width: 27px;
     height: 23px;
     display: inline-block;
     margin-right: 10px;
@@ -645,7 +643,6 @@ footer p {
     font-size: 0;
 }
 .price-controls label {
-    display: inline-block;
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
@@ -746,7 +743,7 @@ footer p {
     align-items: center;
 }
 .found h2 {
-    margin: 0 40px 0 65px;
+    margin: 30px 40px 30px 65px;
 }
 .found span {
     font-size: 12px;
