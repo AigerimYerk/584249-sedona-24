@@ -24,7 +24,7 @@
                 </header>
             </section>
             <main class="container">
-                <form class="filters" method="post" action="">
+                <form class="filters">
                     <div class="left-side">
                         <fieldset>
                             <legend>Инфраструктура:</legend>
@@ -74,10 +74,10 @@
                             <legend>Стоимость в сутки:</legend>
                             <div class="price-controls">
                                 <label class="min-price" for="min-price">
-                                    от<input type="text"  name="min-price" value="0" id="min-price">
+                                    от<input type="text" method="post" action="" name="min-price" value="0" id="min-price">
                                 </label>
                                 <label class="max-price" for="max-price">
-                                    до<input type="text" name="max-price" value="3000" id="max-price">
+                                    до<input type="text" method="post" action="" name="max-price" value="3000" id="max-price">
                                 </label>
                             </div>
                             <div class="range-controls">
