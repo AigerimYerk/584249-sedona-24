@@ -2,9 +2,10 @@ var btn = document.querySelector(".button-search-hotel");
 var form = document.querySelector(".search-form");
 var ar_date = form.querySelector("[name=arrival-date]");
 var dep_date = form.querySelector("[name=departure-date]");
+form.classList.add("search-form-closed");
 btn.addEventListener("click", function (evt) {
     evt.preventDefault();
-    form.classList.toggle("search-form-open");
+    form.classList.toggle("search-form-closed");
     ar_date.focus();
 });
 form.addEventListener("submit", function (evt) {
