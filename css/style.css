@@ -70,10 +70,10 @@ section .welcome {
     position: relative;
 }
 .search-form {
-    display: block;
+    display: none;
 }
 .search-form-open {
-    display: none;
+    display: block;
 }
 .for-travel-text {
     margin: 30px 0;
