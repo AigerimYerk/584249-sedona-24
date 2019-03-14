@@ -13,22 +13,22 @@
                 <div class="header-logo">Логотип Седона</div> 
                 <nav class="page-navigation"> 
                     <ul class="header-navigation-list">
-                        <li><a href="#" class="link current left">Информация</a></li>
-                        <li><a href="#" class="link left">Фото и видео</a></li>
-                        <li><a href="#" class="link right">Карта штата</a></li>
-                        <li><a href="catalog.html" class="link right">Гостиницы</a></li>
+                        <li class="left"><a href="#" class="link">Информация</a></li>
+                        <li class="left"><a href="#" class="link">Фото и видео</a></li>
+                        <li class="right"><a href="#" class="link">Карта штата</a></li>
+                        <li class="right"><a href="catalog.html" class="link">Гостиницы</a></li>
                     </ul>
                 </nav>
             </header>
             <main>
                 <section class="motto">
                     <h1 class="visually-hidden">Sedona</h1>
-                    <p class="visually-hidden">Welcome<br>Because the Grand Canyon Sucks</p>
+                    <p class="visually-hidden">Welcome Because the Grand Canyon Sucks</p>
                     <div class="welcome"></div>
                 </section>
                 <section class="reasons">
-                    <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-                    <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд Каньон!</p>
+                    <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+                    <p class="gray">Рассмотрим 5 причин, по которым Седона круче, чем гранд Каньон!</p>
                     <section class="reasons-list">
                         <div class="row">
                             <div class="more">
@@ -41,15 +41,15 @@
                         <div class="row">
                             <div class="features home">
                                 <h3>Жильё</h3>
-                                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                                <p class="gray">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                             </div>
                             <div class="features food">
                                 <h3>Еда</h3>
-                                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                                <p class="gray">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                             </div>
                             <div class="features souvenirs">
                                 <h3>Сувениры</h3>
-                                <p>Не только китайского, но и местного производства!</p>
+                                <p class="gray">Не только китайского, но и местного производства!</p>
                             </div>
                         </div>
                         <div class="row">
@@ -63,18 +63,18 @@
                         <div class="row">
                             <div class="more row-bg-gray">
                                 <h3>Небольшая<br>площадь</h3>
-                                <p>— №3 —</p>
-                                <p>Все достопримечательности<br> находятся очень близко</p>
+                                <p class="gray">— №3 —</p>
+                                <p class="gray">Все достопримечательности находятся очень близко</p>
                             </div>
                             <div class="more row-bg-gray">
                                 <h3>Красивая<br> дорога</h3>
-                                <p>— №4 —</p>
-                                <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+                                <p class="gray">— №4 —</p>
+                                <p class="gray">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                             </div>
                             <div class="more row-bg-gray">
                                 <h3>Мало<br> туристов</h3>
-                                <p>— №5 —</p>
-                                <p>Большинство едет в гранд каньон<br> и толпится там</p>
+                                <p class="gray">— №5 —</p>
+                                <p class="gray">Большинство едет в гранд каньон и толпится там</p>
                             </div>
                         </div>
                     </section>
@@ -82,7 +82,7 @@
                 <section class="for-travel">
                     <div class="for-travel-text">
                         <h2>Заинтересовались?</h2>
-                        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                        <p class="gray">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                     </div>
                     <div class="form-wrapper">
                         <button class="button button-search-hotel">Поиск гостиницы в Седоне</button>
@@ -92,24 +92,24 @@
                                     <div class="full">
                                         <label for="arrival-date">Дата заезда:</label>
                                         <input type="text" id="arrival-date" name="arrival-date" class="form" placeholder="24 апреля 2017"> 
-                                        <div class="calendar"></div>
+                                        <button class="calendar">Календарь</button>
                                     </div>
                                     <div class="full">
                                         <label for="departure-date">Дата выезда:</label>
                                         <input type="text" id="departure-date" name="departure-date" class="form less" placeholder="4 июля 2017">
-                                        <div class="calendar"></div>
+                                        <button class="calendar">Календарь</button>
                                     </div>
                                 </div>
                                 <div class="visitors-amount">
                                     <div class="half-width">
                                         <label for="adults-amount">Взрослые:</label>
-                                        <button class="change-value form">-</button>
+                                        <button class="change-value form">–</button>
                                         <input type="text" value="1" name="adults-amount" id="adults-amount" class="form">
                                         <button class="change-value form">+</button>
                                     </div>
                                     <div class="half-width">
                                         <label class="children-amount" for="children-amount">Дети:</label>
-                                        <button class="change-value form">-</button>
+                                        <button class="change-value form">–</button>
                                         <input type="text" value="0" name="children-amount" id="children-amount" class="form">
                                         <button class="change-value form">+</button>
                                     </div>
