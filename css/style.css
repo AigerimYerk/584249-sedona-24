@@ -48,7 +48,7 @@ li {
     height: 510px; 
     padding-top: 76px;
 }
-section p {
+.content p {
     font-size: 14px;
     font-weight: 400;
 }
@@ -67,6 +67,15 @@ section .welcome {
 }
 .reasons p {
     margin: 10px 0px;
+}
+.wrap {
+    display: block;
+    width: 120px;
+    text-align: center;
+    margin-left: 80px;
+}
+.more:last-child .wrap {
+    margin-left: 65px;
 }
 .for-travel form {
     -webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -95,7 +104,7 @@ section .welcome {
     font-weight: 700;
     line-height: 36px;
 }
-form fieldset {
+form .main-form {
     border: none;
     width: 100%;
     display: -webkit-box;
@@ -216,7 +225,6 @@ input[type="text"]::placeholder {
     margin-left: -25px;
     background-color: #f2f2f2;
     border: none;
-    outline: none;
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
     background-position-y: 0px;
@@ -226,17 +234,17 @@ input[type="text"]::placeholder {
     height: 22px;
 }
 .calendar:hover {
-    background-position: 0 -23px;
+    background-position: 0 -22.5px;
 }
 .calendar:active {
-    background-position: 0 -46px;
+    background-position: 0 -45.5px;
 }
 .full input:hover {
     background-color: #ebebeb;
 }
 .full input:focus {
     background-color: #ffffff;
-    outline:2px solid #e5e5e5;
+    outline: 2px solid #e5e5e5;
 }
 .half-width label {
     margin-right: 40px;
@@ -299,7 +307,6 @@ input[type="text"]::placeholder {
     font-size: 22px;
     font-weight: 700;
     color: #a9a9a9;
-    outline: none;
     padding: 0px 8px 0px 5px; 
 }
 .hotel-booking {
@@ -309,7 +316,7 @@ input[type="text"]::placeholder {
     text-transform: uppercase;
     text-decoration: none;
 }
-div h3 {
+.row h3 {
     font-size: 21px;
 }
 .catalog-item span {
@@ -355,7 +362,7 @@ div h3 {
     border: none;
     padding: 17px 195px;
 }
-footer p {
+.footer-container p {
     font-size: 21px;
     font-weight: 700;
 }
@@ -363,6 +370,8 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -408,6 +417,10 @@ footer p {
 .icon:active {
     background-color: #5496bd;
 }
+.icon:focus {
+    outline: auto;
+    outline-color: #3685cf;
+}
 .icon:active::before {
     opacity: 0.3;
 }
@@ -438,6 +451,8 @@ footer p {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -578,11 +593,13 @@ footer p {
     padding: 5px 0px;
 }
 .first-pic {
+    background-color: #9e785c;
     background-image: url("../img/1reason.jpg");
     width: 800px;
     height: 256px;
 }
 .second-pic {
+    background-color: #825139;
     background-image: url("../img/third-reason.jpg");
     width: 800px;
     height: 256px;
@@ -591,6 +608,8 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -649,6 +668,10 @@ footer p {
 }
 .htmlacademy-logo:active {
     background-position: center -88px;
+}
+.htmlacademy-logo:focus {
+    outline: auto;
+    outline-color: #2e7fca;
 }
 .catalog-list {
     margin: 0px;
@@ -795,6 +818,10 @@ footer p {
        -moz-appearance: none;
             appearance: none;
 }
+.checkbox:focus+span::before {
+    outline: auto;
+    outline-color: #20a3e0;
+}
 .checkbox+span::before{
     content:""; 
     background-image: url("../img/checkbox-off.svg");
@@ -834,6 +861,7 @@ footer p {
 .left-side fieldset {
     width: 248px;
     margin-left: 4px;
+    border: none;
 }
 .right-side {
     width: 330px;
@@ -843,6 +871,7 @@ footer p {
 }
 .right-side fieldset {
     padding: 0px;
+    border: none;
 }
 .right-side legend {
     margin-bottom: 10px;
@@ -970,6 +999,8 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1002,6 +1033,7 @@ footer p {
     line-height: 18px;
     margin-right: 33px;
     padding-top: 4px; 
+    text-decoration: none;
 }
 .sort {
     opacity: 0.3;
@@ -1024,7 +1056,7 @@ footer p {
 }
 .up {
     background-image: url("../img/icon-up-dir.svg");
-    background-size: 10px 34px;
+    background-size: 11.5px 34px;
     background-position-y: 0px;
     width: 10px;
     height: 11px;
@@ -1040,7 +1072,7 @@ footer p {
 }
 .down {
     background-image: url("../img/icon-down-dir.svg");
-    background-size: 10px 34px;
+    background-size: 11.5px 34px;
     background-position-y: 0;
     width: 10px;
     height: 10px;
@@ -1050,11 +1082,22 @@ footer p {
 .down:hover {
     background-position-y:-12px;
 }
-.down:active {
+.down:active, .active-arr {
+    background-image: url("../img/icon-down-dir.svg");
+    background-size: 11.5px 34px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 2px;
     background-position-y:-23px;
 }
 .arrows {
     margin-right: 75px;
+}
+.arrows button {
+    background-color: #ffffff;
+    border: none;
+    font-size: 0px;
 }
 @keyframes down {
     0% {
